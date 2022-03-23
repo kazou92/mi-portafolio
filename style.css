@@ -80,7 +80,7 @@
   }
   
   /* MOBILE */
-  @media (max-width: 768px) {
+  @media (max-width: 300px) {
     body {
       padding-top: 70px;
     }
@@ -135,18 +135,14 @@
       outline: none;
     }
     .main{
-      margin: 0 auto;
-      width: 60vw;
-      height: 60vh;
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      align-items: center;
+     flex-direction: column;
       
     
   }
   form{
     width: 100%;
   }
+ 
   
   }
   .main{
@@ -236,8 +232,8 @@
 
 }
 .portfolio1{
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #191c32;
   color:red;
   box-sizing: border-box;
@@ -294,12 +290,12 @@ width: 70%;
 
 }
 #fils{
-  width: 100vw;
-  height: 150vh;
+  width: 100%;
+  height: 100%;
   background-image: url(./adlerFotoSclak.jpeg);
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
-  background-attachment: fixed;
+  
 
 
 }
@@ -354,17 +350,29 @@ textarea{
 }
 
 .dodo{
+  display: flex;
   width: 100%;
-  height: 100%;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  background: aquamarine;
+  margin: 5px;
+  
+  z-index: 4;
 }
-.dodo ul{
-  display:flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  background-color: #0769e9;
-  list-style: none;
+.dodo h5{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+
 }
+.live{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5em;
+  align-items: center;
+}
+
+
 
 
 
