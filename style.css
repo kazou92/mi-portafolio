@@ -80,7 +80,7 @@
   }
   
   /* MOBILE */
-  @media (max-width: 300px) {
+  @media (max-width: 768px) {
     body {
       padding-top: 70px;
     }
