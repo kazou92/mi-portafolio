@@ -80,9 +80,10 @@
   }
   
   /* MOBILE */
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     body {
-     
+     width: max-content;
+     height: max-content;
     }
   
     .header {
@@ -152,16 +153,23 @@
     width: 80vw;
     height: 80vh;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fit,minmax(50px,1fr));
     align-items: center;
-    
-  
+}
+.info-content p{
+color: #fff;
+}
+.info-content h1{
+  color: #fff;
+}
+.info-content span{
+  color:aqua
 }
 .main img{
     border: 3px solid aqua;
-    z-index: 2;
+    margin-top: 50px;
     width: 400px;
-    height: 400px;
+    height: 350px;
 }
 .about-me{
     display: grid;
@@ -376,17 +384,15 @@ textarea{
 }
 .wrapper{
   background-color: #191c32;
+  
 }.dodo div h2{
   font-size: 48px;
 }
 
 
-/* <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <script
-    src="https://kit.fontawesome.com/7e5b2d153f.js"
-    crossorigin="anonymous"
-  ></script>
-*/
+.live i{
+  cursor: pointer;
+}
 
 
 
